@@ -1,0 +1,109 @@
+.header--1{
+	font-family: $font-normal;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	color: $color-primary;
+	font-weight: 400;
+}
+
+.header--1-bold{
+	font-family: $font-normal;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	color: $color-primary;
+	font-weight: 700;
+
+	@media only screen and (max-width: $bp-medium){
+		font-size: 2rem;
+	}	
+
+}
+
+.header--1-white{
+	font-family: $font-normal;
+	font-size: 3rem;
+	letter-spacing: 2px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.header--2{
+	font-family: $font-normal;
+	font-size: 6rem;
+	letter-spacing: 2px;
+	color: $color-primary;
+	font-weight: 700;
+
+	@media only screen and (max-width: $bp-medium){
+			font-size: 6rem;
+		    text-align: center;
+	}	
+
+		@media only screen and (max-width: $bp-small){
+			font-size: 3.5rem;
+		    
+	}	
+
+}
+
+
+.header--3{
+	font-family: $font-normal;
+	font-size: 3.5rem;
+	letter-spacing: 2px;
+	color: $color-primary;
+	font-weight: 700;
+
+
+	@media only screen and (max-width: $bp-medium){
+		    text-align: center;
+	}		
+}
+
+.header--3-white{
+	font-family: $font-normal;
+	font-size: 4rem;
+	letter-spacing: 2px;
+	color: #fff;
+	font-weight: 700;
+}
+
+.header--4{
+	font-family: $font-normal;
+	font-size: 7rem;
+	letter-spacing: 2px;
+	color: $color-primary;
+	font-weight: 700;
+
+	@media only screen and (max-width: $bp-medium){
+		font-size: 4rem;
+	}	
+
+
+
+
+}
+
+.header--4-c{
+	font-family: $font-normal;
+	font-size: 7rem;
+	letter-spacing: 2px;
+	color: $color-primary;
+	font-weight: 700;	
+	background-image: linear-gradient(to right, mediumvioletred, deeppink);
+	display: inline-block;
+	-webkit-background-clip: text;
+	color: transparent;
+
+	@media only screen and (max-width: $bp-medium){
+		font-size: 4rem;
+	}	
+	
+}
+
+.u-margin-top-small{
+	margin-top: 3rem;
+}
+.u-margin-top-medium{
+	margin-top: 5rem;
+}

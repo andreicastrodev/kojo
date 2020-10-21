@@ -1,0 +1,73 @@
+//Colors
+
+$color-primary:#212542;
+$color-grey-light:#f6f6f6;
+$color-grey-dark: #aaa;
+
+//Fonts
+$font-primary: 'Anton', sans-serif;
+$font-normal: 'Roboto', sans-serif;
+
+// Responsive BREAKPOINTTS
+
+$bp-largest:75em; //1200 px
+$bp-large:62.5em; //1000px
+$bp-medium:50em; // 800px
+$bp-small:37.5em; // 800px
+
+
+
+*,
+*::before,
+*::after{
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+
+html{
+	box-sizing: border-box;
+	font-size: 62.5%; // 10px/16px  =62.5% = 1 rem = 10 px;
+
+	@media only screen and (max-width:  $bp-large){
+		font-size: 50%;
+	}
+
+		@media only screen and (max-width: $bp-medium){
+		font-size: 45%;
+	}		
+
+
+
+}
+
+
+
+body{
+	background-color: $color-grey-light;
+	font-family: $font-normal;
+	color: $color-primary;
+}
+
+.container{
+	display: grid;
+	grid-template-rows: 5rem 100vh max-content repeat(3, min-content);
+	grid-template-columns: [full-start]1fr[center-start] repeat(8, [col-start] minmax(min-content, 14rem) [col-end])[center-end] 1fr[full-end];
+
+		@media only screen and (max-width:  $bp-large){
+		grid-template-rows: 5rem repeat(2, min-content) repeat(3, min-content) repeat(3, min-content);
+	}
+	}
+
+
+.btn{
+	border: none;
+	border-radius: 0;
+	background-color: none;
+	color: crimson;
+	font-size: 2rem;
+	font-weight: 700;
+	text-decoration: none;
+	outline: none;
+}	

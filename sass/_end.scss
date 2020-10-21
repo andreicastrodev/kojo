@@ -1,0 +1,32 @@
+.end{
+	grid-column: center-start / center-end;
+	height: 50vh;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+	align-content: center;
+
+	@media only screen and (max-width: $bp-medium){
+		padding: 1rem;
+	}	
+	&__content{
+		display: flex;
+		justify-content: space-around;
+
+	}
+
+
+	&__list{
+		list-style: none;
+	}
+
+
+	&__item{
+
+		font-size:  1.5rem;
+		cursor: pointer;
+		font-weight: 700;
+		&:not(:first-child){
+			margin-top: 1rem;
+		}
+	}
+}

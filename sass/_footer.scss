@@ -1,0 +1,56 @@
+.footer{
+	grid-column: full-start / full-end;
+	background-color: grey;
+	display: grid;
+	grid-template-columns: repeat(auto-fit,minmax(25rem, 1fr));
+	justify-content: center;
+	align-content: center;
+
+	&__left{
+		background-color: $color-grey-light;
+		height: 80vh;
+		display: grid;
+		align-content: center;
+
+	@media only screen and (max-width: $bp-medium){
+			height: 50vh;
+	}
+
+	}
+
+	&__content{
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+
+
+		svg{
+			fill: $color-primary;
+
+	@media only screen and (max-width:  $bp-large){
+
+		height: 10rem;
+		width: 10rem;
+	}	
+
+
+		}
+
+	}
+
+
+
+	&__right{
+		background-color: hotpink;
+		display: grid;
+		align-content: center;
+		text-transform: uppercase;
+		height: 80vh;
+
+	@media only screen and (max-width: $bp-medium){
+			height: 50vh;
+	}
+		
+	}
+}

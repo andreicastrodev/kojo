@@ -1,0 +1,17 @@
+.header{
+	grid-column: center-start / center-end;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding:3rem;
+	&__icon{
+		cursor: pointer;
+		svg{
+		width: 2rem;
+		height: 2rem;
+		fill:$color-primary;
+		margin-left: 1rem;		
+		}
+
+	}
+}
